@@ -5,11 +5,13 @@ import App from './App.jsx'
 import EventDemo from './components/EventDemo.jsx'
 import Counter from './components/Counter.jsx'
 import Counter2 from './components/Counter2.jsx'
+import HookDemo from './components/HookDemo.jsx'
+import Sumdemo3 from './components/Sumdemo3.jsx'
 // import About from './about.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Counter2 />
+    <Sumdemo3 />
   </StrictMode>,
 )
