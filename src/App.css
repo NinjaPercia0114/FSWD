@@ -1,195 +1,81 @@
-/* App.css - Modern, clean form styles */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
-
 body {
-  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
-  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 .form-container {
-  max-width: 520px;
-  margin: 48px auto;
-  padding: 40px 48px 32px 48px;
-  background: #f9fafb;
-  border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(80, 112, 255, 0.10), 0 1.5px 6px rgba(0,0,0,0.04);
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  border: 1.5px solid #dbeafe;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
 }
 
 .form-title {
   text-align: center;
-  margin-bottom: 18px;
-  font-size: 2.1rem;
-  color: #4f46e5;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
 .form-error {
-  color: #b91c1c;
-  background: #fef2f2;
-  border: 1.5px solid #fecaca;
-  padding: 10px 16px;
-  border-radius: 6px;
-  margin-bottom: 18px;
+  color: #000000;
+  background-color: #dddddd;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
   text-align: center;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 1.05rem;
 }
 
 .form-group {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
+  margin-bottom: 15px;
 }
 
 .form-label {
-  font-weight: 600;
-  min-width: 120px;
-  margin-bottom: 0;
-  color: #6366f1;
-  margin-right: 18px;
-  text-align: right;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
 }
 
 .form-input {
-  flex: 1;
-  padding: 10px 14px;
-  border: 1.5px solid #c7d2fe;
-  border-radius: 6px;
-  font-size: 1.08rem;
-  background: #f1f5f9;
-  color: #222;
-  transition: border 0.2s, box-shadow 0.2s;
-  font-family: 'Roboto', Arial, sans-serif;
-  box-shadow: 0 1px 2px rgba(99,102,241,0.04);
-}
-
-input, textarea, select {
-  color: #222;
-  font-family: 'Roboto', Arial, sans-serif;
-}
-
-.form-input:focus {
-  border: 1.5px solid #6366f1;
-  outline: none;
-  background: #fff;
-  box-shadow: 0 0 0 2px #c7d2fe;
-}
-
-.form-radio-label {
-  margin-right: 18px;
-  color: #6366f1;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-
-.form-checkbox-group {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  color: #4f46e5;
-}
-
-.form-checkbox-label {
-  font-weight: 600;
-  cursor: pointer;
-  font-family: 'Montserrat', Arial, sans-serif;
-  color: #6366f1;
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .form-checkbox {
-  margin-right: 10px;
-  accent-color: #6366f1;
+  margin-right: 5px;
+}
+
+.form-checkbox-label {
+  font-size: 14px;
+  color: #000000;
 }
 
 .form-submit {
   width: 100%;
-  padding: 14px;
-  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
-  color: #fff;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 16px;
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
-  font-family: 'Montserrat', Arial, sans-serif;
-  box-shadow: 0 2px 8px rgba(99,102,241,0.10);
-  letter-spacing: 0.5px;
 }
-
-.form-submit:hover {
-  background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
-  box-shadow: 0 4px 16px rgba(99,102,241,0.13);
-}
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #818cf8cc);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #6366f1cc);
-}
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-
-.card {
-  padding: 2em;
-  background: #f1f5f9;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
-  margin-bottom: 18px;
-}
-
 
 .read-the-docs {
-  color: #6366f1;
-  font-family: 'Roboto', Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 20px;
 }
-
-
-/* Remove duplicate .form-checkbox-group, already styled above */

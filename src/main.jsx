@@ -7,6 +7,8 @@ import Counter from './components/Counter.jsx'
 import Counter2 from './components/Counter2.jsx'
 import HookDemo from './components/HookDemo.jsx'
 import Sumdemo3 from './components/Sumdemo3.jsx'
+import Signup from './components/Signup.jsx'
+import Signup1 from './components/Signup1.jsx'
 // import About from './about.jsx'
 
 
