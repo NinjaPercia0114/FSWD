@@ -12,6 +12,6 @@ import Sumdemo3 from './components/Sumdemo3.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Sumdemo3 />
+    <App />
   </StrictMode>,
 )
